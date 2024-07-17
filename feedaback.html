@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <style>
+        *{margin: 0;
+            padding: 0;}
+            html{
+                scroll-behavior: smooth;
+            }
+            :root{
+                --navbar-height:59px;
+            }
+           
+            #navbar{
+                display: flex;
+                align-items: center; 
+                position: sticky;
+                top: 0px;
+            }
+            #navbar::before{
+                content: "";
+                background-color:deepskyblue;
+                
+                
+                position: absolute;
+                height: 60%;
+                width: 100%;
+                z-index: -1;
+                opacity: 1;
+            }
+            
+            #logo{
+                margin: 34px 45px;
+            
+            }
+            #logo img{height: 59px;
+                margin: 3px 6px;
+                
+            }
+            
+            #navbar ul{
+                display: flex;
+                
+            }
+            
+            
+            #navbar ul li{
+                
+                list-style: none;
+                font-size: 1.3rem; 
+            }
+            #navbar ul li a{
+                color: white;
+                display: block ;
+                padding: 3px 22px ;
+                border-radius: 20px ;
+                text-decoration: none;
+            }
+            #navbar ul li a:hover{
+                color:black;
+                background-color: white;
+            }
+    </style>
+    <script>
+        function abc()
+        {
+            var gk=confirm("Sure you want to submit");
+            if(gk==true){
+                document.write("<b>Submitted successfully</b>");
+                return true;
+            }
+            else{
+                document.write("Plese try again!");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body id="feed">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="lpu.logo.jpeg" alt="lpu logo">
+            </div>
+            <ul>
+                <li class="item"><a href="tuckshop.HTML">Home</a></li>
+                <li class="item"><a href="shope.html">Shops</a></li>
+                <li class="item"><a href="itam.html">Item available</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+                <li class="item"><a href="feedaback.html">Feedback</a></li>
+            </ul>
+    </nav>
+    <div class="wrap">
+        <table>
+            <form action="" method="">
+                <h1 class="for">Feedback Form</h1>
+                <tr>
+                    <td colspan="2">
+                        <label >
+                            How do you rate your overall experience.</label>
+                        <br/>
+                        <input type="radio" name="rate" value="bad" id="">Bad
+                        <input type="radio" name="rate" value="average" id="">Average
+                        <input type="radio" name="rate" value="good" id="">Good
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Full Name*</label>
+                        <br/>
+                        <input type="text" name="full name" class="txt">
+                    </td>
+                    <td>
+                        <label for="">Email*</label>
+                        <br/>
+                        <input type="email" name="Email" class="txt">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Age*</label>
+                        <br/>
+                        <input type="number" name="Age" class="txt">
+                    </td>
+                    <td>
+                        <label for="">Phone*</label>
+                        <br/>
+                        <input type="number" name="phone" class="txt">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="">Message</label>
+                        <br/>
+                        <textarea class="txtarea" ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button target="_blank" class="btn"  onclick="abc()" type="submit">Submit</button>
+                    </td>
+                </tr>
+                
+            </form>
+        </table>
+    </div>
+</body>
+</html>

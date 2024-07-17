@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+            padding: 0;}
+            html{
+                scroll-behavior: smooth;
+            }
+            :root{
+                --navbar-height:59px;
+            }
+            
+            #navbar{
+                display: flex;
+                align-items: center; 
+                position: sticky;
+                top: 0px;
+            }
+            #navbar::before{
+                content: "";
+                background-color:deepskyblue;
+                
+                
+                position: absolute;
+                height: 60%;
+                width: 100%;
+                z-index: -1;
+                opacity: 1;
+            }
+            
+            #logo{
+                margin: 34px 45px;
+            
+            }
+            #logo img{height: 59px;
+                margin: 3px 6px;
+                
+            }
+            
+            #navbar ul{
+                display: flex;
+                
+            }
+            
+            
+            #navbar ul li{
+                
+                list-style: none;
+                font-size: 1.3rem; 
+            }
+            #navbar ul li a{
+                color: white;
+                display: block ;
+                padding: 3px 22px ;
+                border-radius: 20px ;
+                text-decoration: none;
+            }
+            #navbar ul li a:hover{
+                color:black;
+                background-color: white;
+            }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="lpu.logo.jpeg" alt="lpu logo">
+            </div>
+            <ul>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="shope.html">Shops</a></li>
+                <li class="item"><a href="prid.html">Item available</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+                <li class="item"><a href="feedaback.html">Feedback</a></li>
+            </ul>
+    </nav>
+</body>
+</html>

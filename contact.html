@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contacts.css">
+    <style>
+        *{margin: 0;
+            padding: 0;}
+            html{
+                scroll-behavior: smooth;
+            }
+            :root{
+                --navbar-height:59px;
+            }
+           
+            #navbar{
+                display: flex;
+                align-items: center; 
+                position: sticky;
+                top: 0px;
+            }
+            #navbar::before{
+                content: "";
+                background-color:deepskyblue;
+                
+                
+                position: absolute;
+                height: 60%;
+                width: 100%;
+                z-index: -1;
+                opacity: 1;
+            }
+            
+            #logo{
+                margin: 34px 45px;
+            
+            }
+            #logo img{height: 59px;
+                margin: 3px 6px;
+                
+            }
+           
+            #navbar ul{
+                display: flex;
+                
+            }
+          
+            
+            #navbar ul li{
+                
+                list-style: none;
+                font-size: 1.3rem; 
+            }
+            #navbar ul li a{
+                color: white;
+                display: block ;
+                padding: 3px 22px ;
+                border-radius: 20px ;
+                text-decoration: none;
+            }
+            #navbar ul li a:hover{
+                color:black;
+                background-color: white;
+            }
+    </style>
+    <script>
+        function abc()
+        {
+            var gk=confirm("Are You Sure!");
+            if(gk==true){
+                document.write("We will contact you soon.......");
+                return true;
+            }
+            else{
+                document.write("Try again!");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body id="cont">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="lpu.logo.jpeg" alt="lpu logo">
+            </div>
+            <ul>
+                <li class="item"><a href="tuckshop.HTML">Home</a></li>
+                <li class="item"><a href="shope.html">Shops</a></li>
+                <li class="item"><a href="itam.html">Item available</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+                <li class="item"><a href="feedaback.html">Feedback</a></li>
+            </ul>
+    </nav>
+    <div class="container">
+        
+        <h1>Connect With Us</h1>
+        <p>We would love to respond to your queries and help you succeed. <br> Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent your request</h3>
+                <form action="">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="">Name</label>
+                            <input type="text" placeholder="John Doe">
+                            <label for="">Phone</label>
+                            <input type="number" placeholder="+91 8247180401">
+                        </div>
+                        <div class="input-group1">
+                            <label for="">Email:</label>
+                            <input type="email" placeholder="jondoea@gmail.com">
+                            <label for="">Subject</label>
+                            <input type="text" placeholder="product demo">
+                        </div>
+
+                        
+                    </div>
+                <div class="msg">
+                    <textarea name="" id="msg" cols="50" rows="4" placeholder="Message"></textarea>
+                </div>
+                    <button class="button1" onclick="abc()" type="submit">SEND</button>
+                
+                </form>
+
+
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Emali</td>
+                        <td>Contactus@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+919827348683</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>#221,lovely professional university,school of computing,building 27,phagwara punjab,144002</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

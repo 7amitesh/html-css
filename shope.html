@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPS</title>
+    
+    <style>
+      
+      body{
+      background-image:linear-gradient(black,rgb(27, 47, 48));
+      background-size: cover;
+        
+      }
+    
+    .row{
+      margin-top: 150px;
+      margin-left: 70px;
+    }
+    *{margin: 0;
+      padding: 0;}
+      html{
+          scroll-behavior: smooth;
+      }
+      :root{
+          --navbar-height:59px;
+      }
+      
+      #navbar{
+          display: flex;
+          align-items: center; 
+          position: sticky;
+          top: 0px;
+      }
+      #navbar::before{
+          content: "";
+          background-color:deepskyblue;
+          
+          
+          position: absolute;
+          height: 60%;
+          width: 100%;
+          z-index: -1;
+          opacity: 1;
+      }
+      
+      #logo{
+          margin: 34px 45px;
+      
+      }
+      #logo img{height: 59px;
+          margin: 3px 6px;
+          
+      }
+      
+      #navbar ul{
+          display: flex;
+          
+      }
+      
+      
+      #navbar ul li{
+          
+          list-style: none;
+          font-size: 1.3rem; 
+      }
+      #navbar ul li a{
+          color: white;
+          display: block ;
+          padding: 3px 22px ;
+          border-radius: 20px ;
+          text-decoration: none;
+      }
+      #navbar ul li a:hover{
+          color:black;
+          background-color: white;
+      }
+    #our{
+      color: azure;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 100px;
+      border-radius: 30px;
+      border: 2px solid green;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      font-style:normal;
+      font-weight:1000;
+      transition: 0.5s;
+    }
+    #our:hover{
+      transition: 0.5s;
+      text-shadow: 0px 0px 15px rgb(47, 252, 255);
+    }
+      
+      .column {
+        
+        float: left;
+        border: 10px double grey;
+        border-radius: 100vw 100vw 100vw 100vw;
+        transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+        padding: 25px;
+        cursor: pointer;
+        opacity: 1;
+        margin-right:60px;
+        margin-top:60px;
+        margin-left: 70px;
+        overflow: hidden;
+        transition: 0.5s;
+        
+      }
+      .column:hover{
+        border:10px solid rgb(33, 255, 236);
+        box-shadow: 0px 20px 30.56px rgb(6, 249, 245);
+        
+
+        
+      }
+      .column:active{
+       transform: translateY(50px);
+
+      }
+      
+ 
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+        height: 500px;
+        width: 800px;
+      }
+      
+      .column img:hover {
+        opacity: 1;
+        
+      }
+      
+      
+      .row:after {
+        content: "";
+        
+        clear: both;
+      }
+      
+      
+      .container {
+        position: relative;
+        display: none;
+      }
+      
+      
+      #imgtext {
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        color: white;
+        font-size: 50px;
+      }
+      
+  
+      .closebtn {
+        position: absolute;
+        top: 895px;
+        right: 900px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+        <img src="lpu.logo.jpeg" alt="lpu logo">
+        </div>
+        <ul>
+            <li class="item"><a href="tuckshop.HTML">Home</a></li>
+            <li class="item"><a href="shope.html">Shops</a></li>
+            <li class="item"><a href="itam.html">Item available</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+            <li class="item"><a href="feedaback.html">Feedback</a></li>
+        </ul>
+</nav>
+  <h1 id="our">Our Shops</h1>
+  
+    <div class="row">
+        <div class="column">
+          <img src="./supermarket-shopping-rack-gear-stationery.jpg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./1.jpeg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./2.jpg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./3.jpeg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./4.jpeg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./5.jpeg" alt="Shop" onclick="myFunction(this);">
+        </div><div class="column">
+          <img src="./6.jpeg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./7.jpeg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./download (1).jpeg" alt="Shop" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./8.jpg" alt="Shop" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./11.jpeg" alt="Shop" onclick="myFunction(this);">
+    </div>        <div class="column">
+      <img src="./9.jpeg" alt="Shop" onclick="myFunction(this);">
+  </div>
+      </div>
+    
+      
+      
+      <div class="container">
+       
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+   
+        <img id="expandedImg" style="width:100%">
+      
+        
+        <div id="imgtext"></div>
+      </div>
+      
+</body>
+</html>
