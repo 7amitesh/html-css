@@ -3,7 +3,7 @@ product with hovering effects
 <!doctype html>
 <html>
 <head>
-    <title>Product</title>
+   
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <style>
 
