@@ -125,15 +125,7 @@ product with hovering effects
          <div class="grid-x grid-margin-x small-up-1 medium-up-1 large-up-1 grid-x-wrapper">
              <div class="product-box column" style="text-align: center;  margin: 50px 0 50px;">
               
-            </div>
-         </div>
-      </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+       
 </body>
 </html>
 
