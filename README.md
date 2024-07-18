@@ -1,13 +1,9 @@
 # html-css
 product with hovering effects
-<!doctype html>
+
 <html>
 <head>
-   
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <style>
-
-    </style>
+  
 </head>
 <body>
 <!-- Preloader -->
